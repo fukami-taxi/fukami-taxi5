@@ -114,6 +114,9 @@
   .hero h1 em{
     font-style:normal; color:var(--gold-soft);
   }
+  @media (max-width:480px){
+    .hero h1{ font-size:clamp(32px, 8.2vw, 40px); }
+  }
   .hero .tagline{
     margin-top:26px;
     font-size:clamp(14px,1.6vw,16px);
@@ -284,7 +287,7 @@
 
 <section class="hero">
   <div class="label">Private Car Service</div>
-  <h1>静けさの中を、<br><em>深く</em>、確かに。</h1>
+  <h1>静けさの中を<em>深く</em><br><em>見つめ</em>、確かに。</h1>
   <p class="tagline">深見タクシーは、夜の街を音もなく進むように<br>お客様を目的地まで丁寧にお運びします。</p>
 
   <svg class="route-line" viewBox="0 0 560 60" fill="none">
