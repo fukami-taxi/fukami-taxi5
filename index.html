@@ -67,6 +67,20 @@
   }
   header nav a{opacity:0.75; transition:opacity .3s;}
   header nav a:hover{opacity:1;}
+  .header-right{
+    display:flex; align-items:center; gap:36px;
+    pointer-events:auto;
+  }
+  .header-phone{
+    font-family:'Shippori Mincho', serif;
+    font-size:16px;
+    letter-spacing:0.05em;
+    color:var(--gold-soft);
+    white-space:nowrap;
+    pointer-events:auto;
+    transition:opacity .3s;
+  }
+  .header-phone:hover{opacity:0.8;}
   @media (max-width:720px){ header nav{display:none;} }
 
   /* ---------- Hero ---------- */
@@ -257,12 +271,15 @@
 
 <header>
   <div class="brand">Fukami Taxi<span>深見タクシー</span></div>
-  <nav>
-    <a href="#about">ABOUT</a>
-    <a href="#values">VALUES</a>
-    <a href="#info">SERVICE</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+  <div class="header-right">
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#values">VALUES</a>
+      <a href="#info">SERVICE</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <a href="tel:09032133462" class="header-phone">090-3213-3462</a>
+  </div>
 </header>
 
 <section class="hero">
