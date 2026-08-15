@@ -106,6 +106,15 @@
     pointer-events:none;
   }
   .hero .label{margin-bottom:26px; opacity:0; animation:fadeUp .9s ease forwards .2s;}
+  .news-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 16px; margin-bottom:20px;
+    border:1px solid rgba(176,141,87,0.4); border-radius:999px;
+    font-size:12px; letter-spacing:0.08em; color:#e8dcc4;
+    opacity:0; animation:fadeUp .9s ease forwards .1s;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  .news-badge:hover{border-color:rgba(176,141,87,0.8); background:rgba(176,141,87,0.08);}
   .hero h1{
     font-size:clamp(40px, 7vw, 78px);
     line-height:1.25;
@@ -287,7 +296,7 @@
 
 <section class="hero">
   <div class="label">Private Car Service</div>
-  <h1>静けさの中を<em>深く</em><br><em>見つめ</em>、確実に。</h1>
+  <h1>静けさの中を<em>深</em>く<br><em>見</em>つめ、確実に。</h1>
   <p class="tagline">深見タクシーはお客様を安全で丁寧に<br>目的地までお送り致します。</p>
 
   <svg class="route-line" viewBox="0 0 560 60" fill="none">
@@ -303,8 +312,8 @@
     <div class="mark">深</div>
     <div>
       <div class="label">About Fukami Taxi</div>
-      <h2 style="margin-bottom:28px; font-size:clamp(24px,3vw,32px);">深く見つめ、確実にお客様をお送りする。</h2>
-      <p>一人ひとりのお客様に寄り添い、丁寧な運転と行き届いた気配りで、移動の時間そのものを心地よいものにいたします。</p>
+      <h2 style="margin-bottom:28px; font-size:clamp(24px,3vw,32px);">深く見つめ、お客様を確実にお送り致します。</h2>
+      <p>一人ひとりのお客様に寄り添い、丁寧な運転と行き届いた気配りで、移動の時間そのものを心地良いものに致します。</p>
       <p>深夜のご帰宅や空港の送迎など、静かで確実な車内空間を提供致します。</p>
     </div>
   </div>
@@ -359,7 +368,7 @@
       </div>
       <div class="info-card" id="car-type-item">
         <div class="label">お支払い方法</div>
-        <div class="big" style="font-size:18px; line-height:1.6;">現金 ・ 各種クレジットカード<br>・ QRコード決済 ・ GO Pay<br>・ 各種タクシーチケットお取扱い</div>
+        <div class="big" style="font-size:18px; line-height:1.6;">・ 現金 ・ 各種クレジットカード<br>・ QRコード決済 ・ 電子マネー決済<br>・ GO Pay ・ 各種タクシーチケットお取扱い</div>
       </div>
     </div>
   </div>
