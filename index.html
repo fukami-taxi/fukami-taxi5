@@ -83,6 +83,20 @@
   .header-phone:hover{opacity:0.8;}
   @media (max-width:720px){ header nav{display:none;} }
 
+  .mobile-nav{
+    display:none;
+    position:fixed; top:70px; left:0; right:0; z-index:49;
+    justify-content:center; gap:20px;
+    padding:14px 6vw;
+    background:transparent; backdrop-filter:none;
+    border-bottom:none;
+  }
+  .mobile-nav a{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    font-size:11px; letter-spacing:0.1em; color:#e8dcc4; opacity:0.85;
+  }
+  @media (max-width:720px){ .mobile-nav{display:flex;} }
+
   /* ---------- Hero ---------- */
   .hero{
     min-height:100svh;
@@ -334,6 +348,13 @@
     <a href="tel:09032133462" class="header-phone">090-3213-3462</a>
   </div>
 </header>
+
+<nav class="mobile-nav">
+  <a href="#about">ABOUT</a>
+  <a href="#values">VALUES</a>
+  <a href="#info">SERVICE</a>
+  <a href="#contact">CONTACT</a>
+</nav>
 
 <section class="hero">
   <div class="label">Private Car Service</div>
