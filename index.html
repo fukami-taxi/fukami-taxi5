@@ -605,6 +605,14 @@
     .values-grid{ max-width:320px; margin-left:auto; margin-right:auto; }
     .value{ min-height:320px; display:grid; align-content:center; padding:36px 24px; }
   }
+  /* お知らせの引き出し: 右端から左へ長く伸びる、細い帯 */
+  .hero > .news-drawer{ --news-w:min(480px, calc(50vw - 150px)); }
+  .news-panel{ flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:flex-start; gap:4px 12px; padding:6px 14px; }
+  .news-title{ margin:0; white-space:nowrap; }
+  .news-panel .news-list:not(.news-past){ flex:1 1 220px; }
+  .news-past-btn{ margin-top:0; white-space:nowrap; }
+  .news-past{ flex:1 1 100%; }
+  @media (max-width:720px){ .hero > .news-drawer{ top:80%; --news-w:min(560px, 94vw); } }
 </style>
 
 <section class="contact" id="contact">
