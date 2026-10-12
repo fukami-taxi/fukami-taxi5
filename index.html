@@ -612,7 +612,11 @@
   .news-panel .news-list:not(.news-past){ flex:1 1 220px; }
   .news-past-btn{ margin-top:0; white-space:nowrap; }
   .news-past{ flex:1 1 100%; }
-  @media (max-width:720px){ .hero > .news-drawer{ top:80%; --news-w:min(560px, 94vw); } }
+  @media (max-width:720px){
+    .hero > .news-drawer{ top:auto; bottom:11%; --news-w:min(560px, 94vw); }
+    .news-panel{ background:rgba(5,5,5,0.92); }
+    .hero .cta{ position:relative; top:-76px; }
+  }
 </style>
 
 <section class="contact" id="contact">
