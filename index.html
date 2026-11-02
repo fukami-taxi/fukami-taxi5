@@ -742,10 +742,10 @@
       clearTimeout(timer);
       setOpen(!drawer.classList.contains('is-open'));
     });
-    // 1秒後に自動で開いて最新情報を見せ、5秒後に閉じる
+    // 1秒後に自動で開いて最新情報を見せ、1分後に閉じる
     setTimeout(function(){
       setOpen(true);
-      timer = setTimeout(function(){ setOpen(false); }, 5000);
+      timer = setTimeout(function(){ setOpen(false); }, 60000);
     }, 1000);
   })();
 </script>
